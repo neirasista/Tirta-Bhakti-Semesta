@@ -1,0 +1,248 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+@import "tailwindcss";
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    --color-primary: #1e3a8a;
+    --color-primary-hover: #1d4ed8;
+}
+
+/* Contoh: tambahin warna brand khusus */
+.btn-brand {
+    @apply bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-700 transition;
+}
+
+/* 🧭 Custom Tailwind Theme */
+@theme {
+    /* 🎨 Warna */
+    --color-transparent: transparent;
+    --color-current: currentColor;
+    --color-black: #000;
+    --color-white: #fff;
+
+    --color-slate-50: #f8fafc;
+    --color-slate-100: #f1f5f9;
+    --color-slate-200: #e2e8f0;
+    --color-slate-300: #cbd5e1;
+    --color-slate-400: #94a3b8;
+    --color-slate-500: #64748b;
+    --color-slate-600: #475569;
+    --color-slate-700: #334155;
+    --color-slate-800: #1e293b;
+    --color-slate-900: #0f172a;
+
+    --color-gray-50: #f9fafb;
+    --color-gray-100: #f3f4f6;
+    --color-gray-200: #e5e7eb;
+    --color-gray-300: #d1d5db;
+    --color-gray-400: #9ca3af;
+    --color-gray-500: #6b7280;
+    --color-gray-600: #4b5563;
+    --color-gray-700: #374151;
+    --color-gray-800: #1f2937;
+    --color-gray-900: #111827;
+
+    --color-secondary: #9333ea;
+    --color-success: #10b981;
+    --color-danger: #ef4444;
+    --color-warning: #f59e0b;
+    --color-info: #3b82f6;
+
+    /* 🌈 Gradients */
+    --color-gradient-fuchsia: linear-gradient(310deg, #6d28d9, #ff0080);
+    --color-gradient-cyan: linear-gradient(310deg, #2152ff, #17c1e8);
+    --color-gradient-green: linear-gradient(310deg, #17ad37, #98ec2d);
+    --color-gradient-orange: linear-gradient(310deg, #f53803, #f5d020);
+    --color-gradient-dark-gray: linear-gradient(310deg, #3a416f, #141727);
+    --color-gradient-light-gray: linear-gradient(310deg, #ced4da, #ebeff4);
+
+    /* ✨ Font */
+    --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system,
+        BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+        "Noto Sans", sans-serif;
+    --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
+
+    /* 📏 Spacing */
+    --spacing-0: 0;
+    --spacing-px: 1px;
+    --spacing-0\.5: 0.125rem;
+    --spacing-1: 0.25rem;
+    --spacing-1\.5: 0.375rem;
+    --spacing-2: 0.5rem;
+    --spacing-2\.5: 0.625rem;
+    --spacing-3: 0.75rem;
+    --spacing-3\.5: 0.875rem;
+    --spacing-4: 1rem;
+    --spacing-5: 1.25rem;
+    --spacing-6: 1.5rem;
+    --spacing-7: 1.75rem;
+    --spacing-8: 2rem;
+    --spacing-9: 2.25rem;
+    --spacing-10: 2.5rem;
+    --spacing-12: 3rem;
+    --spacing-14: 3.5rem;
+    --spacing-16: 4rem;
+    --spacing-20: 5rem;
+    --spacing-24: 6rem;
+    --spacing-28: 7rem;
+    --spacing-32: 8rem;
+    --spacing-36: 9rem;
+    --spacing-40: 10rem;
+
+    /* 📱 Breakpoints */
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-2xl: 1320px;
+
+    /* 🧱 Radius */
+    --radius-none: 0;
+    --radius-sm: 0.125rem;
+    --radius-md: 0.375rem;
+    --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
+    --radius-2xl: 1rem;
+    --radius-3xl: 1.5rem;
+    --radius-full: 9999px;
+
+    /* 🌫️ Shadows */
+    --shadow-soft-xs: 0 2px 9px 0 rgba(0, 0, 0, 0.15);
+    --shadow-soft-sm: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+    --shadow-soft-md: 0 6px 15px 0 rgba(0, 0, 0, 0.1);
+    --shadow-soft-lg: 0 10px 20px 0 rgba(0, 0, 0, 0.08);
+    --shadow-soft-xl: 0 12px 24px 0 rgba(0, 0, 0, 0.06);
+    --shadow-soft-2xl: 0 14px 28px 0 rgba(0, 0, 0, 0.05);
+
+    /* ⏱️ Transition Durations */
+    --duration-150: 150ms;
+    --duration-200: 200ms;
+    --duration-300: 300ms;
+    --duration-500: 500ms;
+
+    /* ⚙️ Transition Timing Functions */
+    --ease-nav-brand: cubic-bezier(0.34, 1.25, 0.3, 1);
+    --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* 🔹 Smooth transform transitions */ .transition-transform {
+    transition-property: transform;
+    transition-duration: var(--duration-200);
+    transition-timing-function: var(--ease-soft);
+}
+
+/* 🔹 Smooth color + background transitions */
+.transition-all {
+    transition-property: all;
+    transition-duration: var(--duration-200);
+    transition-timing-function: var(--ease-soft);
+}
+
+/* 🔹 Custom nav-brand easing (sesuai Soft UI) */
+.ease-nav-brand {
+    transition-timing-function: var(--ease-nav-brand);
+}
+
+/* 🔹 Sidebar animation */
+.sidenav {
+    transition: transform var(--duration-200) var(--ease-nav-brand),
+        opacity var(--duration-300) var(--ease-soft);
+}
+
+/* 🔹 Hover effect for sidebar items */
+.nav-item:hover {
+    @apply bg-gray-100 text-primary;
+    transition: background-color var(--duration-150) var(--ease-soft),
+        color var(--duration-150) var(--ease-soft);
+}
+
+/* 🌐 Style Global */
+body {
+    @apply bg-gray-50 text-gray-800 font-sans;
+    font-family: "Instrument Sans", sans-serif;
+    background-color: #f9fafb;
+    color: #1f2937;
+}
+
+#modal .swiper {
+    width: 100%;
+    height: auto;
+}
+
+.swiper {
+    width: 100%;
+    height: auto; /* ubah dari 220px jadi auto */
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+    /transition: transform 0.4s ease;
+}
+
+/* Swiper di MODAL (tampilkan seluruh gambar, tanpa crop) */
+.modal-swiper {
+    width: 100%;
+    height: auto; /* biar menyesuaikan proporsi gambar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-swiper .swiper-slide img {
+    max-width: 100%;
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 4px; /* sudut sedikit membulat */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-slide img:hover {
+    transform: scale(1.05);
+}
+
+.card {
+    border-radius: 1.5rem;
+    background: white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.card-content {
+    padding: 1.25rem;
+}
+
+.swiper-pagination-bullet {
+    background: #1e40af;
+    opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+}

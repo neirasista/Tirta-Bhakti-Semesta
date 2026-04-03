@@ -1,0 +1,15 @@
+import "./bootstrap";
+import "./dashboard";
+import "./catalogue";
+import "./orderdata";
+import "./services";
+import "./portofolio";
+import "./pilihkami";
+import "./location";
+import "./social";
+import "./pemesanan";
+import "./landing";
+import "./about";
+import "./user/portofoliouser";
+import "./user/landingpage";
+import "./user/katalog";
